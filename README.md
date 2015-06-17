@@ -21,6 +21,8 @@ clip里的bottom值为:div自身的高+(div自身的Top位置－文字自身的�
 当页面出发scroll事件时，页面整体向上移动，滚动条向下移动，
 clip top值减小，达到第二张背景图位置时，第二张图上的文字被显示出来。
 同时clip bottom减小 当第三张图出来时，文字被第二张图的文字被隐藏。
+
+
 ===========================
 [线上demo地址：http://olliesk8.github.io/Parallax_Scrolling_demo/](http://olliesk8.github.io/Parallax_Scrolling_demo/ "悬停显示")
 
