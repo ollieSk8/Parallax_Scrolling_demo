@@ -21,7 +21,7 @@
 		background-position:50% 0px;
 	}
 	.box .wenzi{
-		width:700px;
+		width:50%px;
 		height:200px;
 		color:#fff;
 		font-size:50px;
@@ -31,6 +31,75 @@
 		color:#fff;
 		opacity:1;
 		text-shadow:1px 2px 5px rgba(0,0,0,0.5);
+	}
+	.slide-bar{
+		width:20px;
+		height:90px;
+		position: fixed;
+		left:20px;
+		top:50%;
+		margin-top:-45px;
+	}
+	.slide-bar ul li{
+		list-style:none;
+		width:14px;
+		height:14px;
+		border:3px solid #fff;
+		margin-bottom:10px;
+	}
+	.slide-bar ul .active{
+		background:yellow;
+	}
+	@media all and (min-width:980px)and (max-width:1024px){
+		.box{
+			width:100%;
+			height:66.33333%;
+			position: relative;
+		}
+		.box .wenzi{
+			position:absolute;
+			height:100px;
+			left:20px;
+			bottom:20px;
+			font-size:30px;
+		}
+		.slide-bar{
+			display:none;
+		}
+	}
+	@media all and (min-width:768px)and (max-width:979px){
+		.box{
+			width:100%;
+			height:76.33333%;
+			position: relative;
+		}
+		.box .wenzi{
+			position:absolute;
+			height:100px;
+			left:20px;
+			bottom:20px;
+			font-size:30px;
+		}
+		.slide-bar{
+			display:none;
+		}
+	}
+	@media all and (max-width:767px){
+		.box{
+			width:100%;
+			height:335px;
+			position: relative;
+		}
+		.box .wenzi{
+			position:absolute;
+			height:60px;
+			font-size:20px;
+			left:10px;
+			bottom:10px;
+		}
+		.slide-bar{
+			display:none;
+		}
 	}
 </style>
 <body>
@@ -51,6 +120,13 @@
 			But JQuery help me</br>
 			Thank you JQuery.
 		</div>
+	</div>
+	<div class="slide-bar">
+		<ul>
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</div>
 </body>
 </html>
